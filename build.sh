@@ -1,5 +1,5 @@
 #!/bin/bash
-case "$SHED_BUILDMODE" in
+case "$SHED_BUILD_MODE" in
     toolchain)
         ./configure --prefix=/tools || return 1
         ;;
@@ -8,5 +8,5 @@ case "$SHED_BUILDMODE" in
                     --docdir=/usr/share/doc/bison-3.0.4 || return 1
         ;;
 esac
-make -j $SHED_NUMJOBS || return 1
-make DESTDIR="$SHED_FAKEROOT" install || return 1
+make -j $SHED_NUM_JOBS || return 1
+make DESTDIR="$SHED_FAKE_ROOT" install || return 1
