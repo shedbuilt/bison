@@ -1,6 +1,6 @@
 NAME=bison
 VERSION=3.1
-REVISION=1
+REVISION=3
 SRC=http://mirrors.kernel.org/gnu/bison/bison-3.1.tar.xz
 SRCMD5=db7e431785ad96870bfa570a15cab079
 OPTIONS=toolchain|bootstrap|release (docs)
